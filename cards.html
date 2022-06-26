@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper {
+            width: 210px;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .swiper-slide img {
+            margin-top: 25px;
+        }
+
+        /* .hide-backside{
+            overflow: hidden;
+        } */
+
+        .swiper-slide:nth-child(1n) {
+            /* background-color: rgb(206, 17, 17); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            /* background-color: rgb(0, 140, 255); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            /* background-color: rgb(10, 184, 111); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(4n) {
+            /* background-color: rgb(211, 122, 7); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(5n) {
+            /* background-color: rgb(118, 163, 12); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(6n) {
+            /* background-color: rgb(180, 10, 47); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(7n) {
+            /* background-color: rgb(35, 99, 19); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(8n) {
+            /* background-color: rgb(0, 68, 255); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(9n) {
+            /* background-color: rgb(218, 12, 218); */
+            background-color: white;
+        }
+
+        .swiper-slide:nth-child(10n) {
+            /* background-color: rgb(54, 94, 77); */
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/phone-1.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>iphone</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-2.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>samsung</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-3.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>htc</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-4.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>nokia</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-5.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>blueberry</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-6.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>lg</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-7.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>sony</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/phone-8.webp" alt="phone">
+                <div class="hide-backside">
+                    <p>vivo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            loop:true,
+            grabCursor: true,
+        });
+    </script>
+</body>
+
+</html>
