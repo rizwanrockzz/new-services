@@ -47,11 +47,12 @@
         }
 
         .swiper {
-            width: 210px;
             height: 500px;
+            width: 210px;
         }
 
         .swiper-slide {
+            border: 3px solid;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -62,64 +63,61 @@
             font-weight: bold;
             color: black;
             text-transform: uppercase;
+            background-color: white;
+            padding: 1rem;
         }
 
-        .swiper-slide img {
-            margin-top: 25px;
-        }
 
-        /* .hide-backside{
-            overflow: hidden;
-        } */
+        .swiper-slide p {
+            color: white;
+        }
 
         .swiper-slide:nth-child(1n) {
-            /* background-color: rgb(206, 17, 17); */
-            background-color: white;
+            border-color: rgb(206, 17, 17);
+            background-color: rgb(206, 17, 17);
+
         }
 
         .swiper-slide:nth-child(2n) {
-            /* background-color: rgb(0, 140, 255); */
-            background-color: white;
+            border-color: rgb(0, 140, 255);
+            background-color: rgb(0, 140, 255);
+
         }
 
         .swiper-slide:nth-child(3n) {
-            /* background-color: rgb(10, 184, 111); */
-            background-color: white;
+            border-color: rgb(10, 184, 111);
+            background-color: rgb(10, 184, 111);
+
         }
 
         .swiper-slide:nth-child(4n) {
-            /* background-color: rgb(211, 122, 7); */
-            background-color: white;
+            border-color: rgb(211, 122, 7);
+            background-color: rgb(211, 122, 7);
+
         }
 
         .swiper-slide:nth-child(5n) {
-            /* background-color: rgb(118, 163, 12); */
-            background-color: white;
+            border-color: rgb(118, 163, 12);
+            background-color: rgb(118, 163, 12);
+
         }
 
         .swiper-slide:nth-child(6n) {
-            /* background-color: rgb(180, 10, 47); */
-            background-color: white;
+            border-color: rgb(180, 10, 47);
+            background-color: rgb(180, 10, 47);
+
         }
 
         .swiper-slide:nth-child(7n) {
-            /* background-color: rgb(35, 99, 19); */
-            background-color: white;
+            border-color: rgb(35, 99, 19);
+            background-color: rgb(35, 99, 19);
+
         }
 
         .swiper-slide:nth-child(8n) {
-            /* background-color: rgb(0, 68, 255); */
-            background-color: white;
-        }
+            border-color: rgb(0, 68, 255);
+            background-color: rgb(0, 68, 255);
 
-        .swiper-slide:nth-child(9n) {
-            /* background-color: rgb(218, 12, 218); */
-            background-color: white;
-        }
-
-        .swiper-slide:nth-child(10n) {
-            /* background-color: rgb(54, 94, 77); */
-            background-color: white;
         }
     </style>
 </head>
@@ -131,51 +129,35 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="images/phone-1.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>iphone</p>
-                </div>
+                <p>iphone</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-2.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>samsung</p>
-                </div>
+                <p>samsung</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-3.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>htc</p>
-                </div>
+                <p>htc</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-4.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>nokia</p>
-                </div>
+                <p>nokia</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-5.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>blueberry</p>
-                </div>
+                <p>blueberry</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-6.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>lg</p>
-                </div>
+                <p>lg</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-7.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>sony</p>
-                </div>
+                <p>sony</p>
             </div>
             <div class="swiper-slide">
                 <img src="images/phone-8.webp" alt="phone">
-                <div class="hide-backside">
-                    <p>vivo</p>
-                </div>
+                <p>vivo</p>
             </div>
         </div>
     </div>
@@ -187,7 +169,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             effect: "cards",
-            loop:true,
+            loop: true,
             grabCursor: true,
         });
     </script>
