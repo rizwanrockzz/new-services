@@ -154,6 +154,14 @@ nav {
   width: 265px !important;
 }
 
+.swiper-slide img{
+  transform: scale(0.95);
+}
+
+.swiper-slide img:hover{
+  transform: scale(1);
+}
+
 .swiper-slide p {
   margin-top: 20px;
   text-transform: uppercase;
