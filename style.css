@@ -17,7 +17,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  position: fixed;
   height: 4.5rem;
+  z-index: 100;
 }
 
 .nav-links ul {
