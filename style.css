@@ -17,7 +17,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  position: fixed;
   height: 4.5rem;
+  z-index: 10;
 }
 
 .nav-links ul {
@@ -154,11 +157,11 @@ nav {
   width: 265px !important;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   transform: scale(0.95);
 }
 
-.swiper-slide img:hover{
+.swiper-slide img:hover {
   transform: scale(1);
 }
 
@@ -272,4 +275,70 @@ textarea {
 .empty-block {
   width: 100%;
   height: 100px;
+}
+
+/* footer */
+
+.col-heading {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.img-logo{
+  margin: auto;
+  width: 125px;
+}
+
+.footer {
+  margin-top: 5rem;
+  background-color: black;
+  padding: 3rem;
+  position: relative;
+}
+
+.footer::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url("https://assets.digitalocean.com/labs/images/community_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col{
+  margin: auto;
+}
+
+.col ul {
+  /* margin: auto; */
+  list-style: none;
+}
+
+.col ul li a {
+  font-size: 17px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+
+.col ul p {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: white;
+  /* line-height: 2; */
 }
