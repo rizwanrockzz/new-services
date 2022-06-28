@@ -77,12 +77,12 @@ nav {
   background-color: yellow;
   content: "";
   position: absolute;
-  width: 3.4rem;
+  width: 5rem;
   height: 4px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  left: 50%;
+  left: 45%;
   bottom: 0;
   top: 95px;
 }
@@ -262,12 +262,12 @@ textarea {
   background-color: yellow;
   content: "";
   position: absolute;
-  width: 3.4rem;
+  width: 5rem;
   height: 4px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  left: 50%;
+  left: 45%;
   bottom: 0;
   top: 95px;
 }
@@ -286,7 +286,7 @@ textarea {
   font-size: 1.3rem;
 }
 
-.img-logo{
+.img-logo {
   margin: auto;
   width: 125px;
 }
@@ -319,7 +319,7 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.col{
+.col {
   margin: auto;
 }
 
