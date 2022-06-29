@@ -337,9 +337,31 @@ textarea {
   line-height: 2;
 }
 
-.col ul p {
+.social-links {
+  margin-top: 10px;
+  display: flex;
+}
+
+.social {
   font-size: 17px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: white;
-  /* line-height: 2; */
+  padding: 5px 0;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.fa-brands:nth-child(2) {
+  padding: 0 20px;
+}
+
+.end-line {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
 }
