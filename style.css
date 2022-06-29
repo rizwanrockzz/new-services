@@ -337,6 +337,12 @@ textarea {
   line-height: 2;
 }
 
+.col ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .social-links {
   margin-top: 10px;
   display: flex;
@@ -364,4 +370,9 @@ textarea {
   text-align: center;
   position: relative;
   margin-top: 50px;
+}
+
+.fa-solid {
+  font-size: 1.1rem;
+  margin-right: 15px;
 }
